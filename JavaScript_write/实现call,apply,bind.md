@@ -17,7 +17,7 @@
       const result = context[fn](...args);
       delete context[fn];
       return result;
-    }
+    } 
 ```
 
 # 模拟实现apply
