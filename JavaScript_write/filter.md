@@ -27,20 +27,23 @@ filter(function(element, index, array) { /* … */ }, thisArg)
 
 `callbackFn`
 
-  用来测试数组中每个元素的函数。返回 true 表示该元素通过测试，保留该元素，false 则不保留。它接受以下三个参数：
+&emsp;用来测试数组中每个元素的函数。返回 true 表示该元素通过测试，保留该元素，false 则不保留。它接受以下三个参数：
 
-  `element`
-  数组中当前正在处理的元素。
+&emsp;`element`
+    
+&emsp;&emsp;数组中当前正在处理的元素。
 
-  `index`
-  正在处理的元素在数组中的索引。
+  &emsp;`index`
+    
+  &emsp;&emsp;正在处理的元素在数组中的索引。
 
-  `array`
-  调用了 filter() 的数组本身。
+  &emsp;`array`
+    
+  &emsp;&emsp;调用了 filter() 的数组本身。
 
 `thisArg` 可选
 
-  执行 `callbackFn` 时，用于 `this` 的值。
+  &emsp;执行 `callbackFn` 时，用于 `this` 的值。
 
 ## 返回值
 
