@@ -75,9 +75,13 @@ console.log(dog.name) // 'undefined'
 
 ```js
 function create (fn, ...args) {
+  // 创建对象
   let obj = {}
+  // 将对象的原型与构造函数链接
   obj.__proto__ = fn.prototype  // or Object.setPrototypeOf(obj, fn.prototype) 
+  //  执行函数并绑定this
   const res = fn.apply(obj, args)
+  // 判断返回值
   return res instanceof Object ? res : obj
 }
 ```
