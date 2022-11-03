@@ -66,7 +66,7 @@ if(!(obj instanceof Person)) {
 ```js
 function myinstanceof (left, right) {
     // 首先判断left是不是对象类型
-    if (typeof left !== 'object' || A === null || typeof B !== 'function') {
+    if (typeof left !== 'object' || left === null || typeof right !== 'function') {
       return false
     }
     // 获得类型的原型
