@@ -9,4 +9,7 @@ function forEach (arr, fn) {
     fn.call(this, arr[i], i, arr)
   }
 }
+
+let arr = [1,2,3,4,5]
+forEach(arr, (e, i, arr) => console.log(e, i, arr))
 ```
